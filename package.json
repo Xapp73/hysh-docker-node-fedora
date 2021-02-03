@@ -1,0 +1,13 @@
+{
+  "name": "hysh-docker-node-fedora",
+  "version": "1.0.0",
+  "description": "HyperShell Node.js Fedora container",
+  "main": "index.js",
+  "scripts": {
+    "docker:build": "docker build . -t xapp73/hysh-docker-node-fedora",
+    "docker:push": "docker push xapp73/hysh-docker-node-fedora",
+    "docker:run": "docker run -dit -p 3030:3030 --restart always --name hysh-docker-node-fedora -e \"CHAINCODE_ID_NAME=8b554abeb1144726ab3167f67bdfba36\" xapp73/hysh-docker-node-fedora"
+  },
+  "author": "",
+  "license": "ISC"
+}
